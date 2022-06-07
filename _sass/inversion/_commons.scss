@@ -38,7 +38,7 @@ pre {
   color: $--base-fg-color;
   background-color: $--code-bg-color;
   border: 1px $--base-outline-color solid;
-  border-radius: .5em;
+  border-radius: 1em;
   font-family: 'D2Coding', 'Courier New', Courier, monospace;
 }
 
@@ -46,6 +46,8 @@ article {
   max-width: 720px;
   min-height: 70vh;
   margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
   padding: 0 1.5em;
   box-sizing: border-box;
   p {
@@ -53,6 +55,10 @@ article {
     word-break: break-all;
     hyphens: auto;
   }
+}
+
+article.index {
+  text-align: center;
 }
 
 article.category {
