@@ -21,10 +21,7 @@
 title: 호남 대학간 침해 대응 대회 2022
 email: your-email@example.com
 author: 호남 대학간 침해 대응 대회 2023 준비위원회
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jekyll

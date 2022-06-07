@@ -1,0 +1,10 @@
+<header>
+  <div class="logo">
+    <h1><a href="{{ "/" | relative_url }}">호남 대학간 침해 대응 대회 <sup>2022</sup></a></h1>
+  </div>
+  <nav>
+    <a class="header-nav__link {% if page.class=="home" %}now{% endif %}" href="{{ "/" | relative_url }}">홈</a>
+    <a class="header-nav__link {% if page.class=="submission" %}now{% endif %}" href="{{ "/submission" | relative_url }}">접수</a>
+    <a class="header-nav__link {% if page.class=="updates" %}now{% endif %}" href="{{ "/updates" | relative_url }}">새 소식</a>
+  </nav>
+</header>

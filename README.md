@@ -15,7 +15,7 @@ jekyll serve
 
 ### Build Jekyll Page
 Jekyll은 Markdown 문서를 정적 페이지로 자동 변환하여 정적 페이지를 동적 블로그 애플리케이션처럼 동작할 수 있도록 하는 소프트웨어입니다.  
-아래 명령으로 Markdown 문서를 HTML 문서로 렌더링할 수 있습니다.
+아래 명령으로 Markdown 문서를 HTML 문서로 컴파일할 수 있습니다.
 
 ```sh
 jekyll build

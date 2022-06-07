@@ -3,8 +3,13 @@
   {%- include head.html -%}
   <body>
     {%- include header.html -%}
-    <main>
-      {%- include article.html -%}
-    </main>
+      {% if page.class != "home" %}
+      <main>
+        {%- include article.html -%}
+      </main>
+      {%- include footer.html -%}
+    {% else %}
+      {{ content }}
+    {% endif %}
   </body>
 </html>
