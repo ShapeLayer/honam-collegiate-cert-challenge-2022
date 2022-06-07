@@ -32,7 +32,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-permalink: /:year-:month-:day-:title
+permalink: /:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +53,7 @@ permalink: /:year-:month-:day-:title
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+# Non-standard configuration variables
+updates-page-article-prefix: false # If set true, updates page will show posts "[category] postname".

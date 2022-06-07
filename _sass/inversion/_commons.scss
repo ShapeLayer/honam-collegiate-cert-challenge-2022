@@ -13,29 +13,18 @@ html {
 body {
   position: relative;
   width: 100%;
+  min-width: 400px;
   line-height: 1.6;
 }
-
-.content {
-  max-width: 720px;
-  min-height: 70vh;
-  margin: auto;
-  padding: 0 1.5em;
-  box-sizing: border-box;
-  p {
-    margin-bottom: .8em;
-  }
-}
-
 
 a {
   color: $--base-fg-color;
 }
 
 h1, h2, h3, h4 { font-weight: 200; color: $--base-fg-color--dark; }
-h1 { font-size: 1.8em; }
+h1 { font-size: 2em; }
 h2 { font-size: 1.6em; }
-h3 { font-size: 1.7em; }
+h3 { font-size: 1.5em; }
 
 hr {
   width: 40vw;
@@ -43,6 +32,25 @@ hr {
   border: .1em solid;
 }
 
-.primary {
-  color: #fff;
+article {
+  max-width: 720px;
+  min-height: 70vh;
+  margin: auto;
+  padding: 0 1.5em;
+  box-sizing: border-box;
+  p {
+    margin-bottom: .8em;
+    word-break: break-all;
+    hyphens: auto;
+  }
+}
+
+article.category {
+  .category-name::before {
+    margin-right: .3em;
+    content: "»";
+  }
+  .article-filtered-category {
+    list-style: none;
+  }
 }

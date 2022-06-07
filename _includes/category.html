@@ -1,0 +1,21 @@
+<article class="category">
+  <h1 class="content-title">{{ page.title }}</h1>
+  <div class="categories">
+    {% for category in site.categories %}
+    <div class="each-category">
+      {% assign category_id = category | first %}
+      {% if site.data.categories[category_id] %}
+        {% assign category_name = site.data.categories[category_id] %}
+      {% else %}
+        {% assign category_name = category_id %}
+      {% endif %}
+      <h2 class="category-name">{{ category_name }}</h2>
+      <ul class="article-filtered-category">
+        {% for post in category.last %}
+          <li><a href="{{ post.url }}">{% if site.updates-page-article-prefix %}[{{ category_name }}]{% endif %} {{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</article>
