@@ -3,10 +3,12 @@
   {%- include head.html -%}
   <body>
     {%- include header.html -%}
-      {% if page.class != "home" %}
+      {% if page.pagetype != "home" %}
       <main>
-        {% if page.class== "updates" %}
+        {% if page.pagetype == "updates" %}
           {%- include category.html -%}
+        {% elsif page.class == "hideable" %}
+          {%- include hideable.html -%}
         {% else %}
           {%- include article.html -%}
         {% endif %}

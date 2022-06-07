@@ -32,6 +32,16 @@ hr {
   border: .1em solid;
 }
 
+pre {
+  margin: .8em 0;
+  padding: .8em;
+  color: $--base-fg-color;
+  background-color: $--code-bg-color;
+  border: 1px $--base-outline-color solid;
+  border-radius: .5em;
+  font-family: 'D2Coding', 'Courier New', Courier, monospace;
+}
+
 article {
   max-width: 720px;
   min-height: 70vh;

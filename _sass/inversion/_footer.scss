@@ -14,5 +14,8 @@ footer {
   a {
     text-decoration: none;
     font-weight: 700;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
   }
 }
