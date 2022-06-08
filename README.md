@@ -2,6 +2,14 @@
 [![Ruby](https://img.shields.io/badge/Ruby->=2.7.5-CC342D?logo=ruby&logoColor=white)]()
 
 ## Getting Started
+### Get This Repository
+[깃허브에서 제공하는 아카이브 받기](https://github.com/ShapeLayer/honam-collegiate-cybersecurity-conference-2022/archive/refs/heads/main.zip)
+
+```sh
+git clone https://github.com/ShapeLayer/honam-collegiate-cybersecurity-conference-2022.git
+```
+
+### Install Dependencies
 이 웹사이트는 최신 버전의 Jekyll 환경에서 동작합니다. [Jekyll 공식 문서를 참조하여 Jekyll 런타임 환경을 구성](https://jekyllrb.com/docs/)하거나 Ruby가 설치된 환경에서 아래 명령을 실행하세요.
 
 ```sh
@@ -22,3 +30,6 @@ jekyll build
 ```
 
 위 명령을 실행하면 루트 폴더에 `/_site` 폴더가 생성되고, 빌드된 결과물이 이 폴더에 저장됩니다.  
+
+## Manual
+이 사이트의 유지 보수를 위한 메뉴얼은 [Docs](./docs/) 폴더에서 확인할 수 있습니다.

@@ -5,7 +5,7 @@
         {% if page.hidedesc %}
           {{ page.hidedesc }}
         {% else %}
-          이 페이지는 비공개입니다.
+          {{ site.default-hidedesc }}
         {% endif %}
       {% else %}
         {{ content }} 

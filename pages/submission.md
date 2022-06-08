@@ -5,5 +5,6 @@ hide: true
 hidedesc: "아직 접수가 시작되지 않았습니다."
 layout: default
 pagetype: submission
+navselect: submission
 permalink: /submission
 ---
