@@ -37,10 +37,13 @@ header {
       transition: .2s ease-in-out;
       &:hover, &:focus {
         border-color: $--base-fg-color--dark;
+        font-size: 1.3em;
         transition: .2s ease-in-out;
       }
       &.now {
         border-color: $--base-fg-color;
+        font-size: 1.3em;
+
       }
     }
   }
