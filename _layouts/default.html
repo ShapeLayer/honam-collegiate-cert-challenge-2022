@@ -6,12 +6,14 @@
       <main>
         {% if page.pagetype == "home" %}
           {{ content }}
-        {% elsif page.pagetype == "updates" %}
-          {%- include category.html -%}
         {% elsif page.class == "hideable" %}
           {%- include hideable.html -%}
         {% else %}
-          {%- include article.html -%}
+          {% if page.pagetype == "categories" %}
+            {%- include category.html -%}
+          {% else %}
+            {%- include article.html -%}
+          {% endif %}
         {% endif %}
       </main>
     {%- include footer.html -%}

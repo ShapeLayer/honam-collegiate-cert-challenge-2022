@@ -98,6 +98,11 @@ img {
 
 article.index {
   text-align: center;
+  @media (min-width: 520px) {
+    li {
+      padding-left: 40px;
+    }
+  }
 }
 
 article.content {

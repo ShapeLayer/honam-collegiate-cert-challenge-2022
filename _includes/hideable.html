@@ -8,7 +8,11 @@
           {{ site.default-hidedesc }}
         {% endif %}
       {% else %}
-        {{ content }} 
+        {% if page.pagetype == "categories" %}
+          {%- include category.html -%}
+        {% else %}
+          {{ content }} 
+        {% endif %}
       {% endif %}
     </div>
 </article>
