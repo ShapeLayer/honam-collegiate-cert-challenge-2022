@@ -59,6 +59,3 @@ permalink: /:title
 updates-page-article-prefix: false # If set true, updates page will show posts "[category] postname".
 default-hidedesc: |
   이 페이지는 비공개입니다.
-  
-host: 192.168.0.3
-port: 4000

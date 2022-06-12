@@ -9,4 +9,17 @@ navselect: registration
 permalink: /registration
 ---
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlLooDw08T5JQCSOtVcx1sHs9s7_LcxAWxLJB8djLKivjNBQ/viewform?embedded=true" scrolling="no" width="720px" height="2050px" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe>
+[새 창에서 보기](https://docs.google.com/forms/d/e/1FAIpQLSdlLooDw08T5JQCSOtVcx1sHs9s7_LcxAWxLJB8djLKivjNBQ/viewform?embedded=true){:target="_blank"}  
+
+<embed id="submit-form" src="https://docs.google.com/forms/d/e/1FAIpQLSdlLooDw08T5JQCSOtVcx1sHs9s7_LcxAWxLJB8djLKivjNBQ/viewform?embedded=true" />
+
+<style>
+  embed#submit-form {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 70vh;
+    background: #fff;
+    border-radius: .5em;
+  }
+</style>
