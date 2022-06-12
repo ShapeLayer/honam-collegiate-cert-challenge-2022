@@ -3,9 +3,10 @@
   {%- include head.html -%}
   <body>
     {%- include header.html -%}
-      {% if page.pagetype != "home" %}
       <main>
-        {% if page.pagetype == "updates" %}
+        {% if page.pagetype == "home" %}
+          {{ content }}
+        {% elsif page.pagetype == "updates" %}
           {%- include category.html -%}
         {% elsif page.class == "hideable" %}
           {%- include hideable.html -%}
@@ -13,9 +14,6 @@
           {%- include article.html -%}
         {% endif %}
       </main>
-    {% else %}
-      {{ content }}
-    {% endif %}
     {%- include footer.html -%}
   </body>
 </html>
