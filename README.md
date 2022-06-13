@@ -17,6 +17,9 @@ bundler install
 ```
 
 ### Serve Jekyll Page
+Jekyll의 내장 웹 엔진을 사용하여 실시간으로 웹 서버를 제공할 수 있습니다.  
+기본값은 `127.0.0.1:4000` 입니다.
+
 ```sh
 jekyll serve
 ```

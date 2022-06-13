@@ -79,4 +79,76 @@ YAML헤더에 `class: hideable`을 추가하면 비공개가 가능한 레이아
 
 ## 4. 그 외 DOM 컴포넌트 간 상호작용
 ### 4.1. 상단 네비게이션 바
+상단 네비게이션 바는 `/_includes/header.html` 에 정의되어있습니다.  
+네비게이션 바는 각 페이지와 포스트 YAML 헤더의 `navselect` 속성을 기준으로 작동합니다.  
 
+만약 `navselect` 속성이 `header.html`에 기록된 값이라면 헤당 탭에 `now` 클래스가 추가됩니다.  
+자세한 내용은 헤더 컴포넌트 정의를 참조하세요.  
+
+### 4.2. 게시판 카테고리 페이지
+포스트는 카테고리 관계 없이 `_posts` 페이지 하위에 작성됩니다.  
+
+카테고리 페이지는 YAML 헤더에 `pagetype: categories`를 추가하여 생성합니다.  
+아래는 카테고리 페이지(`/pages/categories.md`) 예시입니다.
+```md
+---
+title: 게시판 기능
+class: hideable
+hide: false
+hidedesc: "게시판 기능"
+layout: default
+pagetype: categories
+navselect: __NONE__
+permalink: /categories
+target_tags: [jekyll, test]
+---
+```
+* `pagetype: categories`는 이 페이지가 게시판 카테고리 페이지로 표시되게 합니다.
+* 만약 YAML 헤더에 `target_tags`가 있다면 `target_tags`에 들어 있는 태그만 표시합니다.  
+
+아래는 지킬 기본 포스트인 `"Welcome to Jekyll!"`의 시작 부분입니다.  
+```md
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2022-06-02 22:02:13 +0900
+class: hideable
+hide: false
+categories: jekyll update
+navselect: updates
+---
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+```
+
+위와 같이 작성되면 `jekyll` 태그와 `update` 태그가 공개 설정된 카테고리 페이지에 위 포스트가 표시됩니다.  
+
+
+**상세 사용 예**  
+만약 공지와 새 소식 게시판을 나누고자 한다면 아래와 같이 작성할 수 있습니다.  
+
+* `/pages/notifications.md`
+```md
+---
+title: 공지
+layout: default
+pagetype: categories
+navselect: notifications
+permalink: /notifications
+target_tags: [notifications]
+---
+```
+
+* `/pages/updates.md`
+```md
+---
+title: 공지
+layout: default
+pagetype: categories
+navselect: updates
+permalink: /updates
+target_tags: [updates]
+---
+```
+
+위와 같이 작성한다면 `/updates` 는 `updates` 태그가 붙은 포스트만 가져오고, `/notifications` 는 `notifications` 태그가 붙은 포스트만 가져옵니다.  
+만약 포스트의 태그가 `updates`, `notifications` 둘 다 붙어있다면 두 페이지 모두에서 작동합니다.  
