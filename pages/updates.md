@@ -4,7 +4,7 @@ class: hideable
 hide: false
 hidedesc: "대회가 시작되면 업데이트 됩니다."
 layout: default
-pagetype: categories
+pagetype: updates
 navselect: updates
 permalink: /updates
 ---
